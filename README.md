@@ -44,13 +44,16 @@ git push -u origin main
 | `PERSONAL_ACCESS_TOKEN` | ваш [GitHub Personal Access Token](https://github.com/settings/tokens) со скоупами `repo`, `project`, `workflow` |
 | `CURSOR_API_KEY` | ваш ключ Cursor API |
 
-### 4. Запустите workflow `Init`
+### 3. Запустите workflow `Init`
 
 Перейдите в **Actions → Init → Run workflow**.
 
 Workflow создаст GitHub Project с Kanban-доской и 9 GTD-колонками, привяжет его к вашему репозиторию и запишет идентификаторы в `settings.yml`.
 
 После этого система готова к работе.
+
+### 4. Активируйте workflow в проекте
+![img.png](docs/img.png)
 
 ## Использование
 
