@@ -37,15 +37,14 @@ git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
 
-### 2. Добавьте секреты `PERSONAL_ACCESS_TOKEN` и `CURSOR_API_KEY`
+### 2. Добавьте секреты
 
-Перейдите в **Settings → Secrets and variables → Actions** вашего репозитория и создайте секрет:
+Перейдите в **Settings → Secrets and variables → Actions** вашего репозитория и создайте два секрета:
 
-- **Name:** `PERSONAL_ACCESS_TOKEN`
-- **Value:** ваш [GitHub Personal Access Token](https://github.com/settings/tokens) со скоупами `repo`, `project`, `workflow`
-
-- **Name:** `CURSOR_API_KEY`
-- **Value:** ваш ключ Cursor API
+| Name | Value |
+|---|---|
+| `PERSONAL_ACCESS_TOKEN` | ваш [GitHub Personal Access Token](https://github.com/settings/tokens) со скоупами `repo`, `project`, `workflow` |
+| `CURSOR_API_KEY` | ваш ключ Cursor API |
 
 ### 4. Запустите workflow `Init`
 
